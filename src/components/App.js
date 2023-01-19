@@ -5,8 +5,8 @@ const App = () => {
   const[expense,setExpense]=useState(0);
   const handle =()=>{
     const a =document.createElement("li");
-    const b=getElementById("expense-input";
-    a.innerHTML= document.)=b.value;
+    const b= document.getElementById("expense-input");
+    a.innerHTML==b.value;
     document.getElementById("expense-list").appendChild(a);
     const c=b.indexOf("-");
     const d =c.split(c);
