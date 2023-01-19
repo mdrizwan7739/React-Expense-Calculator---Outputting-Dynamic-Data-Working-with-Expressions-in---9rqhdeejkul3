@@ -2,15 +2,15 @@ import React,{useState} from 'react'
 import '../styles/App.css';
 
 const App = () => {
-  const[expense,setExpense]=useState(0);
-  const handle =()=>{
-    const a =document.createElement("li");
-    const b= document.getElementById("expense-input");
-    a.innerHTML==b.value;
+  const [expense, setExpense] = useState(0);
+  const handle = () => {
+    const a = document.createElement("li");
+    const b = document.getElementById("expense-input").value;
+    a.innerHTML = b;
     document.getElementById("expense-list").appendChild(a);
-    const c=b.indexOf("-");
-    const d =c.split(c);
-    setExpense(parseInt(d)+expense);
+    const c = b.indexOf('-');  
+    const d = b.slice(c + 1).trim();
+    setExpense(parseInt(d) + expense);
   }
 
   return (
@@ -20,7 +20,7 @@ const App = () => {
       <div id="expense-list">
       </div>
       <div id="total-expense">
-        Total Expense: {expense};
+        Total Expense: {expense}
       </div>
     </div>
   )
